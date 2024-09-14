@@ -34,6 +34,4 @@ projects.forEach((project) =>{
   `
 })
 
-console.log(projectHTML);
-
 document.querySelector('.js-cards').innerHTML = projectHTML;

@@ -39,6 +39,4 @@ infos.forEach((info) => {
   `
 });
 
-console.log(aboutHTML);
-
 document.querySelector('.js-cards-container').innerHTML = aboutHTML;
