@@ -18,6 +18,11 @@ const contacts = [{
   href: 'https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage',
   icon: 'fa-solid fa-info',
   name: 'Indeed'
+},{
+  title: 'Go to GitHub profile',
+  href: 'https://github.com/SyrillDex',
+  icon: 'fa-brands fa-github',
+  name: 'GitHub'
 }];
 
 let contactsHTML = '';
