@@ -389,6 +389,7 @@ html{
 }
 .projects-div{
   display: flex;
+  flex-direction: column;
   background-color: #ff691dcc;
   height: 620px;
   justify-content: center;
@@ -398,7 +399,7 @@ html{
   transition: all cubic-bezier(0.26, 0.5, 0, 1.32) 1500ms;
 }
 .projects-title{
-  font-size: 7.5rem;
+  font-size: 6.8rem;
   color: hsl(0, 0%, 8%);
   font-weight: bold;
   color: #f4f4f4;
@@ -422,9 +423,7 @@ html{
 }
 @media(max-width:800px){
   .projects-title{
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
   .projects:hover .projects-div{
     width: 0%;
