@@ -6,17 +6,17 @@ const projects = [{
 },{
   id: 'card2',
   image: 'images/P2.png',
-  href: '',
+  href: 'https://syrilldex.github.io/ROTG-website/',
   title: 'Rice on the Go(Future business website)'
 },{
   id: 'card3',
   image: 'images/P3.png',
-  href: '',
+  href: 'https://github.com/SyrillDex/thesis',
   title: 'DoCapture(Thesis project)'
 },{
   id: 'card4',
   image: 'images/P4.png',
-  href: '',
+  href: 'https://syrilldex.github.io/Personal-Portfolio/',
   title: 'Personal portfolio'
 }];
 
