@@ -32,7 +32,7 @@ projects.forEach((project) =>{
     <li class="card" id="${project.id}">
         <div class="card-body">
             <img src="${project.image}" alt="Project">
-            <div class="view-site"><a target="_blank" href="${project.href}"><p>View Site <i class="fa-solid fa-link fa-xs"></i></p></a></div>
+            <div class="view-site"><a target="_blank" href="${project.href}"><p>Visit Site <i class="fa-solid fa-link fa-xs"></i></p></a></div>
         </div>
     </li>
     <h2>${project.title}</h2>
