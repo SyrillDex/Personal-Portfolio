@@ -152,7 +152,7 @@ html{
   background-size:cover;
   background-position: center;
   background-attachment: fixed;
-  /* filter: blur(5px) brightness(0.7); */
+  filter: blur(2px);
   z-index: -1;
 }
 .intro-text{
@@ -168,7 +168,7 @@ html{
   color: white;
   font-size: 1.7rem;
   line-height: 35px;
-  font-family: Concert one;
+  font-family: Montserrat;
   transition: all ease 0.75s;
   animation: 1.6s bounce ease-in-out;
 }
