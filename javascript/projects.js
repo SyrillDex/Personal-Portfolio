@@ -18,6 +18,11 @@ const projects = [{
   image: 'images/P4.png',
   href: 'https://syrilldex.github.io/Personal-Portfolio/',
   title: 'Personal portfolio'
+},{
+  id: 'card5',
+  image: 'images/IG.jpg',
+  href: 'https://github.com/SyrillDex/php-practice',
+  title: 'Fake IG using PHP'
 }];
 
 let projectHTML = '';
