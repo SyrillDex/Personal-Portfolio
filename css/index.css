@@ -172,12 +172,12 @@ html{
   transition: all ease 0.75s;
   animation: 1.6s bounce ease-in-out;
 }
-.intro-text span:hover{
+.intro-text span{
   color: #f25100;
 }
 .intro-text h1{
   color: #f25100;
-  font-size: 9rem;
+  font-size: 7.6rem;
   font-family: Poppins;
   line-height: 120px;
   display: flex;
@@ -224,7 +224,7 @@ html{
     line-height: 18px;
   }
 }
-@media(max-width: 1300px){
+@media(max-width: 1200px){
   .intro-text h1{
     font-size: 3.8rem;
     line-height: 65px;
