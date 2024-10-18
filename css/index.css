@@ -273,6 +273,7 @@ html{
   height: auto;
   background-color: #021526;
   padding-top: 20px;
+  overflow: hidden;
 }
 .about-me .heading{
   display: flex;
@@ -354,6 +355,10 @@ html{
 }
 .mini-card{
   display: flex;
+  gap: 35px;
+}
+.mini-card img{
+  /* display: flex; */
   width: 60px;
   background-color: hsla(0, 0%, 0%, 0.4);
   padding: 8px;
@@ -362,16 +367,28 @@ html{
   transition: all ease 0.5s;
   cursor: pointer;
 }
-.mini-card:hover{
+@keyframes autoslider{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 9));
+  }
+}
+.mini-card img:hover{
   opacity: 1;
   transform: scale(1.1);
 }
 .tech{
   display: flex;
-  gap: 10px;
   padding: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  overflow: hidden;
+  width: 1000vh;
+  gap: 40px;
+  animation: autoslider 20s linear infinite;
+}
+.tech:hover{
+  animation-play-state: paused;
 }
 .tech-title h3{
   color: white;
