@@ -274,6 +274,7 @@ html{
   background-color: #021526;
   padding-top: 20px;
   overflow: hidden;
+  position: relative;
 }
 .about-me .heading{
   display: flex;
@@ -354,8 +355,25 @@ html{
   margin: 10px;
 }
 .mini-card{
-  display: flex;
-  gap: 35px;
+  display: inline-block;
+  animation: autoslider 30s linear infinite;
+}
+.tech::before,
+.tech::after{
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  height: 130px;
+  content: "";
+  z-index: 2;
+}
+.tech::before{
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0),#021526);
+}
+.tech::after{
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0),#021526);
 }
 .mini-card img{
   /* display: flex; */
@@ -366,13 +384,14 @@ html{
   opacity: 0.6;
   transition: all ease 0.5s;
   cursor: pointer;
+  margin: 0 25px;
 }
 @keyframes autoslider{
   0%{
     transform: translateX(0);
   }
   100%{
-    transform: translateX(calc(-250px * 9));
+    transform: translateX(-100%);
   }
 }
 .mini-card img:hover{
@@ -384,10 +403,9 @@ html{
   padding: 1.5rem;
   overflow: hidden;
   width: 1000vh;
-  gap: 40px;
-  animation: autoslider 20s linear infinite;
+  white-space: nowrap;
 }
-.tech:hover{
+.tech:hover .mini-card{
   animation-play-state: paused;
 }
 .tech-title h3{
