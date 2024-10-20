@@ -184,10 +184,10 @@ html{
   align-items: center;
   transition: all ease 0.75s;
 }
-.intro-text h1 .add{
+.add{
   opacity: 0;
   padding-left: 10px;
-  transition: all ease 0.75s;
+  transition: all ease 0.75s ;
 }
 .intro-text h1:hover{
   color: white;
@@ -627,7 +627,7 @@ html{
 .hidden{
   opacity: 0;
   transform: translateX(-10%);
-  transition: all ease-in-out 2s;
+  transition: all ease-in-out 1s;
 }
 .show{
   opacity: 1;
