@@ -28,7 +28,7 @@ let aboutHTML = '';
 
 infos.forEach((info) => {
   aboutHTML += `
-    <div class="about-me-card">
+    <div class="about-me-card hidden">
         <img src="${info.image}" alt="school image">
         <div>
           <h2>${info.description.title}</h2>

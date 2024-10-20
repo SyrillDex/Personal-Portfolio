@@ -287,15 +287,15 @@ html{
   margin-right: 1.5rem;
 }
 .line{
-  flex: 0;
+  flex: 1;
   height: 30px;
   background-color: #f25100;
   border-radius: 20px 0px 0px 20px;
   transition: all ease-in 0.75s;
 }
-.about-me:hover .line{
+/* .about-me:hover .line{
   flex: 1;
-}
+} */
 @media(max-width: 922px){
   .about-me h1{
     font-size: 1.5rem;
@@ -623,4 +623,25 @@ html{
 .top-button:hover{
   background-color: #f25100;
   opacity: 1;
+}
+.hidden{
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: all ease-in-out 2s;
+}
+.show{
+  opacity: 1;
+  transform: translateX(0);
+}
+.about-me-card:nth-child(1){
+  transition-delay: 100ms;
+}
+.about-me-card:nth-child(2){
+  transition-delay: 300ms;
+}
+.about-me-card:nth-child(3){
+  transition-delay: 500ms;
+}
+.about-me-card:nth-child(4){
+  transition-delay: 700ms;
 }
