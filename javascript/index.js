@@ -38,8 +38,12 @@ mybutton.onclick = topFunction;
 
 changeValue = document.querySelector('.js-change-value');
 changeValue.addEventListener('mouseover', () => {
-  changeValue.innerHTML = "Software"
+  setInterval(() => {
+    changeValue.innerHTML = "Software";
+  }, 2000);
 });
 changeValue.addEventListener('mouseout', () => {
-  changeValue.innerHTML = "Web"
+  setInterval(() => {
+    changeValue.innerHTML = "Web";
+  }, 2000);
 });
