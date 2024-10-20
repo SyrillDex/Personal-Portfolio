@@ -35,3 +35,11 @@ function topFunction() {
 
 // Attach the topFunction to the button click
 mybutton.onclick = topFunction;
+
+changeValue = document.querySelector('.js-change-value');
+changeValue.addEventListener('mouseover', () => {
+  changeValue.innerHTML = "Software"
+});
+changeValue.addEventListener('mouseout', () => {
+  changeValue.innerHTML = "Web"
+});
